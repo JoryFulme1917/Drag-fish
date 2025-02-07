@@ -12,12 +12,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector2(transform.position.x, pos.y);
-        if (pos.y == 4) {
+        if (pos.y >= 4) {
             pos.y = 4;
         }
-        if (pos.y == -4){
+        if (pos.y <= -4){
             pos.y = -4;
         }
+        transform.position = new Vector2(transform.position.x, pos.y);
+    
     }
 }
