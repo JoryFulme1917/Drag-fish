@@ -130,8 +130,9 @@ GameObject:
   - component: {fileID: 49869293}
   - component: {fileID: 49869292}
   - component: {fileID: 49869291}
+  - component: {fileID: 49869294}
   m_Layer: 0
-  m_Name: Square
+  m_Name: ScoreCounter Boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,6 +254,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &49869294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49869290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe71138570124a6da1861bacecc7145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &83214606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,8 +1267,10 @@ GameObject:
   - component: {fileID: 1853434526}
   - component: {fileID: 1853434528}
   - component: {fileID: 1853434527}
+  - component: {fileID: 1853434530}
+  - component: {fileID: 1853434529}
   m_Layer: 0
-  m_Name: Square
+  m_Name: PlayerHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1377,6 +1392,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1853434529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853434525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d54afaf9e884d71a4376f09a4ed179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1853434530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853434525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d54afaf9e884d71a4376f09a4ed179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1891045704
 GameObject:
   m_ObjectHideFlags: 0

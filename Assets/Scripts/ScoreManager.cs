@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -20,11 +21,12 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public void IntScore(int ds){
+    public void IncScore(int ds){
         score += ds;
         ScoreText.text = "Score: " + score;
     }
 
+  
 // Start is called once before the first execution of Update after the MonoBehaviour is created
 void Start()
 {
