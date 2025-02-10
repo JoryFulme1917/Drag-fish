@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7061581e03f6e4f986269c1693c4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocks: {fileID: 0}
 --- !u!212 &83214608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -644,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7061581e03f6e4f986269c1693c4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocks: {fileID: 0}
 --- !u!212 &879252266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -959,6 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7061581e03f6e4f986269c1693c4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocks: {fileID: 0}
 --- !u!212 &1585932038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1437,7 +1440,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 807552534, guid: dd4cb9be34af8804a9039498cdef6e3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1579,6 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fcb2f1831589a4b9ba5d7ee854f826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1046064034}
 --- !u!4 &1976636331
 Transform:
   m_ObjectHideFlags: 0
