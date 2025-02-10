@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -11,10 +12,10 @@ public class ScoreManager : MonoBehaviour
     void Awake(){
         if (Instance == null){
             Instance = this;
-            DontDestroyOnLoad(gameobject);
+            DontDestroyOnLoad(gameObject);
         }
         else{
-            Destroy(gameobject);
+            Destroy(gameObject);
         }
 
     }
