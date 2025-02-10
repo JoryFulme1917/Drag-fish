@@ -1,0 +1,40 @@
+using UnityEngine;
+
+public class ScoreManager : MonoBehaviour
+{
+    public static ScoreManager Instance { get; private set;}
+
+    int score = 0;
+    public TextMeshProUGUI ScoreText;
+
+
+    void Awake(){
+        if (Instance == null){
+            Instance = this;
+            DontDestroyOnLoad(gameobject);
+        }
+        else{
+            Destroy(gameobject);
+        }
+
+    }
+
+    public void IntScore(int ds){
+        score += ds;
+        ScoreText.text = "Score: " + score;
+    }
+
+// Start is called once before the first execution of Update after the MonoBehaviour is created
+void Start()
+{
+}
+
+// Update is called once per frame
+void Update()
+{
+}
+}
+
+
+
+
