@@ -13,9 +13,9 @@ public class ScoreMinusOne : MonoBehaviour
     {
         
     }
-     void OnCollisionEnter2D(Collision2D col){
+     private void OnCollisionEnter2D(Collision2D collison){
         Debug.Log("OnCollisionEnter2D");
-        Destroy(col.gameObject);
+        Destroy(gameObject);
 
         ScoreManager.Instance.IncScore(-1);
     }

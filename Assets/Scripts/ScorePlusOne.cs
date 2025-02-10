@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScorePlusOne : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+{    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -14,10 +15,14 @@ public class ScorePlusOne : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D col){
-        Debug.Log("OnCollisionEnter2D");
-        Destroy(col.gameObject);
+    private void OnTriggerEnter2D(Collider2D col){
+        if (col.CompareTag("Boundary")){
+            Debug.Log("OnCollisionEnter2D");
+            Destroy(col.gameObject);
 
-        ScoreManager.Instance.IncScore(1);
+            ScoreManager.Instance.IncScore(1);
+
+        }
+        
     }
 }

@@ -14,7 +14,7 @@ public class GetRock : MonoBehaviour
     IEnumerator GoRock() {
         for (;;) {
             yield return new WaitForSeconds(Random.Range(2f,5f));
-            Instantiate(rock);
+            GameObject go = Instantiate(rock);
         }
     }
 
