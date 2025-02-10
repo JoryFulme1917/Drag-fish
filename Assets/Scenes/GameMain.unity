@@ -1621,11 +1621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fcb2f1831589a4b9ba5d7ee854f826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  ScoreText: {fileID: 0}
-=======
   ScoreText: {fileID: 1046064034}
->>>>>>> Stashed changes
 --- !u!4 &1976636331
 Transform:
   m_ObjectHideFlags: 0
