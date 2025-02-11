@@ -15,7 +15,7 @@ public class RockMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float speed = 0.017f;
+        float speed = 0.22f;
         transform.position = new Vector2(transform.position.x - speed, transform.position.y);
        
         if (!offscreen && transform.position.x < -14){
